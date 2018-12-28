@@ -27,11 +27,14 @@
   },
   "scripts": {
     "build": "parcel build --no-source-maps --no-content-hash ./src/coursera-side-by-side-transcript-greasemonkey.user.js --out-dir ./dist",
-    "watch": "parcel watch --no-source-maps ./src/coursera-side-by-side-transcript-greasemonkey.user.js --out-dir ./dist"
+    "watch": "parcel watch --no-source-maps ./src/coursera-side-by-side-transcript-greasemonkey.user.js --out-dir ./dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "gh-pages": "^2.0.1",
     "parcel-bundler": "^1.11.0",
     "parcel-plugin-greasemonkey": "^1.0.3"
   },
