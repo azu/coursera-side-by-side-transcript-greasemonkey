@@ -26,8 +26,8 @@
     "test": "test"
   },
   "scripts": {
-    "build": "parcel build --no-source-maps --no-content-hash ./src/coursera-side-by-side-transcript-greasemonkey.user.js --out-dir ./dist",
-    "watch": "parcel watch --no-source-maps ./src/coursera-side-by-side-transcript-greasemonkey.user.js --out-dir ./dist",
+    "build": "parcel build --no-source-maps --no-content-hash ./src/coursera-side-by-side-transcript.user.js --out-dir ./dist",
+    "watch": "parcel watch --no-source-maps ./src/coursera-side-by-side-transcript.user.js --out-dir ./dist",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
