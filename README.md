@@ -10,7 +10,9 @@ Install with [npm](https://www.npmjs.com/):
 
 ## Usage
 
-- [ ] Write usage instructions
+Install from following URL.
+
+- <https://azu.github.io/coursera-side-by-side-transcript-greasemonkey/coursera-side-by-side-transcript.user.js>
 
 ## Changelog
 
