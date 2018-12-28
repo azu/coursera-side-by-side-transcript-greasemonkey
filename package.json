@@ -1,0 +1,42 @@
+{
+  "name": "coursera-side-by-side-transcript-greasemonkey",
+  "version": "1.0.0",
+  "description": "coursera side-by-side transcript for Greasemonkey.",
+  "keywords": [
+    "greasemonkey"
+  ],
+  "homepage": "https://github.com/azu/coursera-side-by-side-transcript-greasemonkey",
+  "bugs": {
+    "url": "https://github.com/azu/coursera-side-by-side-transcript-greasemonkey/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/coursera-side-by-side-transcript-greasemonkey.git"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "main": "lib/coursera-side-by-side-transcript-greasemonkey.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "parcel build --no-source-maps --no-content-hash ./src/coursera-side-by-side-transcript-greasemonkey.user.js --out-dir ./dist",
+    "watch": "parcel watch --no-source-maps ./src/coursera-side-by-side-transcript-greasemonkey.user.js --out-dir ./dist"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.11.0",
+    "parcel-plugin-greasemonkey": "^1.0.3"
+  },
+  "dependencies": {
+    "history": "^4.7.2",
+    "wait-for-element": "^1.0.2"
+  }
+}
